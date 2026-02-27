@@ -34,6 +34,7 @@
 
 - ✅ **Dark & Light Mode**: Clean implementation.
 - ✅ **Optimized SEO**: Automatic meta tags, Structured Data (JSON-LD), RSS Feed, Open Graph, Twitter Cards, and native Sitemap.
+- ✅ **Native Scroll Animations**: High-performance, JS-light scroll reveal animations using `Intersection Observer`.
 - ✅ **Clean Architecture**: Organized and scalable code.
 - ✅ **Reusable Components**: Navbar, Footer, and modern Layouts with Tailwind v4.
 

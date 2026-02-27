@@ -43,3 +43,16 @@
     outline-offset: 2px;
   }
 }
+
+/* Animations - Reveal on Scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}

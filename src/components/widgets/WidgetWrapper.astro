@@ -7,6 +7,7 @@ const {
   containerClass = "",
   bg = "",
   classes = {},
+  animate = true,
 } = Astro.props as Widget;
 
 const wrapperClasses = {
@@ -17,7 +18,7 @@ const wrapperClasses = {
 
 <div
   id={id}
-  class:list={["relative not-prose scroll-mt-[72px]", bg, { dark: isDark }]}
+  class:list={["relative not-prose scroll-mt-[72px]", bg, { dark: isDark }, { reveal: animate }]}
 >
   <div
     class:list={[

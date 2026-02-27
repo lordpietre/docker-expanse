@@ -32,6 +32,7 @@ export interface Widget {
   bg?: string;
   containerClass?: string;
   classes?: Record<string, string>;
+  animate?: boolean;
 }
 
 export interface HeadlineProps extends Widget {
