@@ -4,7 +4,7 @@ async function saveTraffic() {
   const token = process.env.GRAPH_TOKEN;
   const repo =
     process.env.GITHUB_REPOSITORY || "devgelo-labs/astro-starter-pro";
-  const filePath = "./data/clones.json";
+  const filePath = "./.github/data/clones.json";
 
   const response = await fetch(
     `https://api.github.com/repos/${repo}/traffic/clones`,
@@ -58,7 +58,7 @@ async function saveTraffic() {
     clones: combinedClones,
   };
 
-  if (!fs.existsSync("./data")) fs.mkdirSync("./data");
+  if (!fs.existsSync("./.github/data")) fs.mkdirSync("./.github/data", { recursive: true });
   fs.writeFileSync(filePath, JSON.stringify(finalData, null, 2));
 
   console.log(
