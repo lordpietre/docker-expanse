@@ -12,7 +12,7 @@ export const siteConfig = {
   ogImage: ogImage,
   socialLinks: {
     twitter: "https://twitter.com/lordpietre",
-    github: "https://github.com/lordpietre/docker-expanse",
+    github: "https://github.com/lordpietre/expanse",
     discord: "https://discord.gg/expanse",
   },
   navLinks: [
@@ -20,6 +20,6 @@ export const siteConfig = {
     { text: "Features", href: "/#features" },
     { text: "Tech Stack", href: "/#tech-stack" },
     { text: "Documentation", href: "/docs" },
-    { text: "GitHub", href: "https://github.com/lordpietre/docker-expanse" },
+    { text: "GitHub", href: "https://github.com/lordpietre/expanse" },
   ],
 };
