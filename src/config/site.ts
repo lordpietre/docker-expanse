@@ -1,26 +1,25 @@
 import ogImage from "../assets/og-image.png";
 
 export const siteConfig = {
-  name: "Astro Starter Pro",
+  name: "Expanse",
   description:
-    "Starter template optimized for SEO and performance. A solid foundation to start your projects with best practices.",
-  url: "https://astrostarterpro.com",
+    "Expanse is a professional-grade, open-source orchestration platform that transforms Docker Compose management into a fluid visual experience.",
+  url: "https://expanse.sh", // Placeholder URL
   lang: "en",
   locale: "en_US",
-  author: "Devgelo",
-  twitter: "@Devgelo",
+  author: "lordpietre",
+  twitter: "@lordpietre",
   ogImage: ogImage,
   socialLinks: {
-    twitter: "https://twitter.com",
-    github: "https://github.com/devgelo-labs/astro-starter-pro",
-    discord: "https://discord.com",
+    twitter: "https://twitter.com/lordpietre",
+    github: "https://github.com/lordpietre/docker-expanse",
+    discord: "https://discord.gg/expanse",
   },
   navLinks: [
     { text: "Home", href: "/" },
-    { text: "About", href: "/about" },
-    { text: "Services", href: "/services" },
-    { text: "Blog", href: "/blog" },
-    { text: "Contact", href: "/contact" },
-    { text: "Widgets", href: "/widgets" },
+    { text: "Features", href: "/#features" },
+    { text: "Tech Stack", href: "/#tech-stack" },
+    { text: "Documentation", href: "/docs" },
+    { text: "GitHub", href: "https://github.com/lordpietre/docker-expanse" },
   ],
 };

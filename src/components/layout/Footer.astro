@@ -1,12 +1,17 @@
 ---
 import { siteConfig } from "../../config/site";
+import { Image } from "astro:assets";
+import logo from "../../assets/images/logo.png";
 ---
 
 <footer class="mt-20 border-t border-border bg-card">
   <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
     <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
-      <div class="flex flex-col items-center gap-2 md:items-start">
-        <span class="text-lg font-bold text-foreground">{siteConfig.name}</span>
+      <div class="flex flex-col items-center gap-2 md:items-start text-center md:text-left">
+        <div class="flex items-center gap-2">
+            <Image src={logo} alt="Expanse Logo" width={24} height={24} class="w-6 h-6 object-contain" />
+            <span class="text-xl font-bold text-foreground">{siteConfig.name}</span>
+        </div>
         <p class="text-sm text-muted-foreground">
           {siteConfig.description}
         </p>

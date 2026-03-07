@@ -1,6 +1,8 @@
 ---
 import { siteConfig } from "../../config/site";
 import ThemeToggle from "../ui/ThemeToggle.astro";
+import logo from "../../assets/images/logo.png";
+import { Image } from "astro:assets";
 ---
 
 <nav
@@ -12,9 +14,10 @@ import ThemeToggle from "../ui/ThemeToggle.astro";
     <div class="flex items-center gap-2">
       <a
         href="/"
-        class="text-xl font-bold tracking-tight text-foreground transition-colors hover:text-primary"
+        class="flex items-center gap-2 text-xl font-bold tracking-tight text-foreground transition-colors hover:text-primary"
       >
-        {siteConfig.name}
+        <Image src={logo} alt="Expanse Logo" width={32} height={32} class="w-8 h-8 object-contain" />
+        <span>{siteConfig.name}</span>
       </a>
     </div>
 

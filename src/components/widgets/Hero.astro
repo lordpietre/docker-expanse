@@ -27,7 +27,7 @@ const { container: containerClassProp = "" } = classes;
   bg={bg}
   animate={animate}
 >
-  <div class="text-center">
+  <div id="hero-content" class="text-center transition-transform duration-75 ease-out">
     {
       tagline && (
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-6">
@@ -78,3 +78,15 @@ const { container: containerClassProp = "" } = classes;
   </div>
   <slot />
 </WidgetWrapper>
+
+<script>
+  const heroContent = document.getElementById('hero-content');
+  if (heroContent) {
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      // Subtle parallax effect: move content slower than scroll
+      heroContent.style.transform = `translateY(${scrollY * 0.2}px)`;
+      heroContent.style.opacity = `${Math.max(0, 1 - scrollY / 500)}`;
+    });
+  }
+</script>
