@@ -13,7 +13,7 @@ export const siteConfig = {
   socialLinks: {
     twitter: "https://twitter.com/lordpietre",
     github: "https://github.com/lordpietre/expanse",
-    discord: "https://discord.gg/expanse",
+    discord: "https://discord.gg/TpnwRyrJ",
   },
   navLinks: [
     { text: "Home", href: "/" },
